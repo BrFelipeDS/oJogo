@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>O Jogo</title>
+        <link href="reset.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    </head>
+    <body class="corpo">
+        <header class="cabecalho">
+            <img class="jigsaw-mobile" src="jigsaw-top.png" alt="Jigsaw dos Jogos Mortais">
+            <img class="jigsaw" src="jigsaw-left.png" alt="Jigsaw dos Jogos Mortais">
+            <h1 class="titulo">O Jogo</h1> 
+            <img class="jigsaw2" src="jigsaw-right.png" alt="Jigsaw dos Jogos Mortais"> 
+        </header>
+        <section class="jogo">
+            <h2>Vamos Jogar?</h2>
+        </section>
+        <main class="caixa">
+        <div>
+            <img src="jigsaw-icon.png" alt="ìcone Jigsaw" class="jigicon">
+            <form class="entradas">
+                <label for="usuario" class="user-name">Nome da Vítima:</label>
+                <input type="text" id="usuario">
+                <p class="texto-dificuldade">Como generosidade, escolha a dificuldade:</p>
+                <select id="dificuldade">
+                    <option value="0">Morte Provável (1 a 10)</option>
+                    <option value="1">Morte Iminente (1 a 100)</option>
+                    <option value="2">Morte Certa (1 a 200)</option>
+                    <option value="3">E Morreu... (1 a 1000)</option>
+                </select>
+                <input onclick="mudarNome()" type="button" id="comecar" value="Começar">
+            </form>
+        <div class="susto">
+        <img src="jigsaw.png" alt="Susto do Jigsaw" class="jumpscare">
+        </div>
+        <audio src="scream.mp3" class="scream"></audio>
+        <audio src="jumpscare.mp3" class="jumpscare-sound"></audio>
+        </div>  
+        <div class="divisor">
+        </div>
+        <div class="interface">
+            <p id="nome-usuario">Olá!</p>
+            <p class="regras">Eis a Regra d'O Jogo: Acerte o número dentro do intervalo da dificuldade escolhida e sairá vivo!</p>
+            <p class="sorte">Boa sorte...</p>
+            <form class="chute">
+                    <label for="guess">Insira um valor:</label>
+                    <input type="text" id="guess">
+                    <input type="button" id="chutar" value="Tente a sorte...">
+            </form>
+            <p id="dica"></p>
+            <p id="tentativas"></p>
+        </div>
+        </main>
+        <script src="oJogo.js"></script>
+    </body>
+</html>
