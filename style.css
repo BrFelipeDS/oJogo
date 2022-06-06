@@ -329,14 +329,17 @@ body{
 
 
 @media screen and (max-width: 1024px){
+
     .jigsaw-mobile{
         display: block;
         animation: fadeInDelayed 2s linear;
     }
+
     .cabecalho{
         display: flex;
         flex-direction: column;
     }
+
     .titulo{
         font-size: 5rem;
         display: flex;
@@ -346,11 +349,13 @@ body{
         padding-left: 16%;
         padding-right: 16%;
     }
+
     .jogo{
         text-align: center;
         font-size: 4rem;
         padding-top: 21rem;
     }
+
     .jigsaw{
         display: none;
     }
@@ -358,21 +363,24 @@ body{
     .jigsaw2{
         display: none;
     }
+
     .caixa{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         width: 95%;
-        height: 80rem;
+        height: auto;
+        max-height: 80%;
         margin: 0 auto;
         margin-bottom: 3rem;
-
     }
+
     .divisor{
         margin-left: 10%;
         height: 0.1rem;
         width: 78%;
     }
+
     .jigicon{
         display: inline;
         margin-left: 20%;
@@ -380,6 +388,7 @@ body{
         height: auto;
         
     }
+
     .entradas{
         display: flex;
         flex-direction: column;
@@ -390,9 +399,7 @@ body{
         left: 0;
         margin-left: 10%;
     }
-    
 
-    
     .texto-dificuldade{
         display: block;
         text-align: center;
@@ -438,9 +445,19 @@ body{
         height: auto;
         margin-left: 19%;
     }
+
+    #tentativas{
+        margin-bottom: 3rem;
+    }
+
+    #dica{
+        max-width: 100%;
+    }
+
     .interface{
         padding-left: 0;
     }
+    
     .jumpscare{
         display: none;
         position: absolute;

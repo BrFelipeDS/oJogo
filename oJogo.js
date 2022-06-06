@@ -71,7 +71,7 @@ function chutar(){
         }
     }
     
-    if(tentativas ===0){
+    if(tentativas === 0){
         document.querySelector("#dica").innerHTML = "Você perdeu!";
         document.querySelector("#tentativas").innerHTML = "A resposta era " + answer + "!";
         Jumpscare();
