@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+        <link rel="icon" href="jigsaw-icon.png">
     </head>
     <body class="corpo">
         <header class="cabecalho">
@@ -22,7 +23,7 @@
         </section>
         <main class="caixa">
         <div>
-            <img src="jigsaw-icon.png" alt="ìcone Jigsaw" class="jigicon">
+            <img src="jigsaw-icon.png" onclick= "Jumpscare()" alt="ìcone Jigsaw" class="jigicon">
             <form class="entradas">
                 <label for="usuario" class="user-name">Nome da Vítima:</label>
                 <input type="text" id="usuario">
@@ -38,8 +39,12 @@
         <div class="susto">
         <img src="jigsaw.png" alt="Susto do Jigsaw" class="jumpscare">
         </div>
-        <audio src="scream.mp3" class="scream"></audio>
-        <audio src="jumpscare.mp3" class="jumpscare-sound"></audio>
+        <audio>
+            <audio src="scream.mp3" class="scream">
+            <audio src="thunder.mp3" class="thunder">
+            <audio src="victory.mp3" class="victory">
+            <audio src="victory2.mp3" class="victory2">
+        </audio>
         </div>  
         <div class="divisor">
         </div>

@@ -60,6 +60,8 @@ function chutar(){
             document.querySelector("#dica").innerHTML = "Você acertou!";
             victory = 1;
             document.querySelector("#tentativas").innerHTML = "Não terá tanta sorte da próxima vez...";
+            document.querySelector(".victory").play();
+            setTimeout(function(){document.querySelector(".victory2").play()}, 4000);
         }
         else if(chute < answer){
             document.getElementById("dica").innerHTML = "A resposta é maior...";
@@ -78,9 +80,13 @@ function chutar(){
     if(tentativas ===0){
         document.querySelector("#dica").innerHTML = "Você perdeu!";
         document.querySelector("#tentativas").innerHTML = "A resposta era " + answer + "!";
-        document.querySelector(".scream").play();
-        document.querySelector(".jumpscare-sound").play();
-        setTimeout(function(){document.querySelector(".jumpscare").style.display = "block"}, 200);
-        setTimeout(function(){document.querySelector(".jumpscare").style.display = "none"}, 6000);
+        Jumpscare();
     }
+}
+
+function Jumpscare(){
+        document.querySelector(".scream").play();
+        setTimeout(function(){document.querySelector(".thunder").play()}, 200);
+        setTimeout(function(){document.querySelector(".jumpscare").style.display = "block"}, 300);
+        setTimeout(function(){document.querySelector(".jumpscare").style.display = "none"}, 6000);
 }
