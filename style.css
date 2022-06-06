@@ -341,7 +341,7 @@ body{
         font-size: 5rem;
         display: flex;
         margin-top: 0;
-        padding-top: 15rem;
+        padding-top: 5rem;
         padding-bottom: 5rem;
         padding-left: 16%;
         padding-right: 16%;
@@ -349,6 +349,7 @@ body{
     .jogo{
         text-align: center;
         font-size: 4rem;
+        padding-top: 15rem;
     }
     .jigsaw{
         display: none;
